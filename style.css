@@ -55,7 +55,7 @@
 }
 #content {
 width: 100%;
-height: 90vh;
+height: 100vh;
 background: linear-gradient(rgb(236, 236, 236),rgba(236, 236, 236,0)),url(./media/mountains2.png),url(./media/switzerland-862870_1920.jpg);
 background-size:cover;
 background-repeat: no-repeat;
@@ -71,7 +71,7 @@ background-position: center;
         letter-spacing: 10px;
     }
 }
-
+/* sezione paragrafo da aggiustare */
 .virgolette {
     position: relative;
 }
@@ -106,14 +106,31 @@ background-position: center;
 .tx_para {
     width: 60%;
 }
-/* @media screen and (max-width:767px) {
-    .tx_para {
-        width: 60%;
+/* allineamento icone  */
+.position_collum {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+@media screen and (max-width:767px) {
+    .position_collum {
+        display: flex;
         justify-content: center;
+        flex-direction: column;
         align-items: center;
-
+        margin-bottom: 20px;
     }
-} */
+}
+@media screen and (min-width:768px) and (max-width:992px) {
+    .position_collum {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+}
 .icone {
     max-width: 40px;
     max-height: 40px;
@@ -122,8 +139,13 @@ background-position: center;
 }
 .collum {
     border-bottom: darkred 4px solid;
-    width: 10%;
- /* aggiustare le card ed il cerchio */
+}
+.riga {
+    background-color: darkred;
+    position: relative;
+    width: 200px;
+    height: 5px;
+    box-sizing: border-box;
 }
 
 .cerchio {
@@ -132,14 +154,28 @@ background-position: center;
     border-radius: 50%;
     border: 2px solid darkred;
     background-color: white;
-    top: 25px;
 }
-/* cercio
-widht 20px
-heigt 20px
-border radius  50%
-border 2px solid
-bgc white
-top
-e poi crei un div sotto al p
- */
+.img_woodWhite {
+    width: 100%;
+}
+.myButton {
+    position: absolute;
+    left: 43%;
+    top: 50%;
+}
+@media screen and (max-width:568px) {
+    .myButton {
+        position: absolute;
+        left: 23%;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1260px) {
+    .myButton {
+        position: absolute;
+        left: 40%;
+    }
+}
+.img_single {
+    width: 100%;
+    bottom: 20%;
+}
