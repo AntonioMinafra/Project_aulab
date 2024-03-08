@@ -194,7 +194,7 @@
 .riga_sinistra {
     border-left: 4px solid darkred;
     position: relative;
-    left: 15px;
+
 }
 .cerchio2 {
     width: 20px;
@@ -217,4 +217,14 @@
     list-style-type: none;
     display: flex;
     justify-content:space-evenly;
+}
+.img_other {
+    width: 100%;
+
+}
+.footer {
+    position: relative;
+}
+.pdg {
+    padding: 0px !important;
 }
